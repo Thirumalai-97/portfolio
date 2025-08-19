@@ -1,701 +1,197 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>About me </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="icon" type="image/png" href=""> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiru Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
-        <!--Google Fonts link-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      font-variant-numeric: tabular-nums;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.3;
+    }
+    header {
+      background: #00050c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #a8dadc;
+    }
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      color: #1d3557;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #0b5bca;
+      text-decoration: none;
+      padding: 0; 
+    }
+    footer {
+      background: #ffffff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thirumalai M</h1>
+    <p>Quantum Machine Learning and AI</p>
+  </header>
 
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#others">Others</a>
+    <!-- <a href="#contact">Contact</a> -->
+  </nav>
 
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+    I am a researcher with a strong interest in <strong>Quantum Computing, Artificial Intelligence, and Optimization</strong>. 
+    My research focus on <strong> quantum machine learning, quantum-inspired algorithms, machine learning models, and computational problem-solving</strong>, with hands-on experience in applying these techniques to complex challenges. 
+   
+     <p>Email: <a href="mailto:your.email@example.com">er.mthirumalai@gmail.com</a> |<a href="https://www.linkedin.com/in/m-thirumalai/" target="_blank"> LinkedIn </a>|<a href="https://github.com/Thirumalai-97" target="_blank"> GitHub</a> |<a href="https://drive.google.com/file/d/14l2QbJk3RiBYE6GQ4E_0hFQmBMjNL_4e/view?usp=sharing" target="_blank"> Download CV</a></p>
 
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <link rel="stylesheet" href="assets/css/slick-theme.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/fonticons.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
-
-
-        <!--For Plugins external css-->
-        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
-
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar-collapse">
-
-
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
-            </div>
-        </div><!--End off Preloader -->
-
-
-        <div class="culmn">
-            <!--Home page style-->
-
-
-            <nav class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase">
-                <!-- Start Top Search -->
-                <div class="top-search">
-                    <div class="container">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Top Search -->
-
-                <div class="container">    
-                    <!-- Start Atribute Navigation -->
-                 
-                    <div class="attr-nav">
-                        <ul>
-                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                            </li>
-
-                        </ul>
-                    </div> 
-
-                    <!-- End Atribute Navigation -->
-
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            THIRUMALAI
-                            <!-- <img src="assets/images/Thirumalai_logo_cleaned.png" class="logo logo-display" alt=""> -->
-                            <!-- <img src="assets/images/DoCQu_logo_cleaned.png" class="logo logo-scrolled" alt=""> -->
-
-                        </a>
-                    </div>
-                    <!-- End Header Navigation -->
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li><a href="index.html">About me</a></li> 
-							<!-- <li><a href="aboutme.html">About</a></li> 							                    -->
-                            <li><a href="portfolio.html">Portfolio</a></li> 							
-                            <li><a href="blog.html">Blogs</a></li>                                    
-                            <!-- <li><a href="contactus.html">contact</a></li>   -->
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div>  
-
-
-            </nav>
+    </section>
 
 
-            <!--Home Sections-->
+     <section id="experience">
+      <h2>Experience</h2>
+      Knowledge Asscociate at <strong>Centre for Development of Advanced Computing (C-DAC)</strong>, New Delhi (2025 - Present) <br>
+      Automation Analyst at <strong>Amazon</strong>, Chennai (2019 - 2023)
+    </section>
 
 
-            <section id="hello" class="home bg-mega">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home text-center">
-                            <div class="home_text">
-                                <h3 class="text-white text-uppercase">Thirumalai M</h4>
-                                <h1 class="text-white text-uppercase">Knowledge Asscociate<br>
-                                Centre for Development of Advanced Computing (C-DAC), New Delhi, India</h1>
+     <section id="education">
+      <h2>Education</h2>
+      Master of Technology (MTech) in <strong>Quantum Technologies at Indian Institite of Technology</strong>, Jodhpur, India (2025) <br>
+      Bachelor of Engineering (BE) in <strong>Electrical and Electronics Engineering</strong> at KCG College of Technology, Chennai (2018)
+    </section>
 
-                                <div class="separator"></div>
-                                
-
-                                
-                                <h4 class=" text-uppercase text-white"><em> My area of research is in Quantum Machine Learning and 
-                                    Quantum optimization algorithms.</em></h5>
-                            </div>
-                        </div>
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-
-
-<!-- 
-            <section id="hello" class="about-banner bg-mega">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home text-center">
-                            <div class="about_text">
-                                <h1 class="text-white text-uppercase">About Me</h1>
-                                <ol class="breadcrumb">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="active"><a href="aboutme.html">About Me</a></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </section>   -->
-
-
-            <!--About Sections-->
-            <section id="feature" class="ab_feature roomy-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_ab_feature">
-
-                            <div class="col-md-6">
-                                <!-- Head Title -->
-                                <div class="head_title">
-                                    <h2>About me</h2>
-                                    <h5><em></em></h5>
-                                    <div class="separator_left"></div>
-                                </div><!-- End off Head Title -->
-
-                                <div class="ab_feature_content wow fadeIn m-top-40">
-                                    <p style="text-indent: 20px; text-align:justify ">
-                                        I have completed my Master of Technology (MTech) in 
-                                        Quantum Technologies at Indian Institite of Technology <a href="https://iitj.ac.in/main/en/iitj">(IIT)</a>, 
-                                        Jodhpur, India.
-                                        Recently I joined in QML research team at Centre for Development of Advanced Computing <a href="https://www.cdac.in">
-                                            (C-DAC)
-                                        </a>, 
-                                        Delhi, India. 
-
-      
-                                        </p>
-                                     <p style="text-indent: 20px; text-align:justify">
-                                        Back then I did my Bachelor's in Electrical and Electronics Engineering at <a href="https://kcgcollege.ac.in">
-                                            KCG College of Technology</a>, Chennai. Post that I 
-                                        worked as Automation Analyst at Amazon, Chennai for four years. Honestly, Amazon 
-                                        shaped my professional skills. I cleared GATE in CSE and got into IIT Jodhpur for my MTech. 
-                                        I have involved/organized in various quantum events/workshops from Qiskit, QWorld, Womanium, Classiq, etc,.
-                                        I co-founded and acted as Secretary of Quantum Club at IIT Jodhpur. My masters thesis explores classification of 
-                                        multi-qubit quantum states using QML models, I have also worked on projects related to 
-                                        Quantum inspired optimization. By July, 2025 I joined at C-DAC, Delhi, where my research focussed on
-                                        developing and optimizing efficient quantum encoding mechanism, 
-                                        tunable Parametric Quantum Circuits (PQC).
-                                         Check my blogs on Quantum Tech at <a href="blog.html">blogs</a> page.
-                                                                         </p>
-                                     
-                                     
-                                    <p style="text-indent: 20px; text-align:justify ">
-                                     
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="ab_feature_photo wow fadeIn sm-m-top-40">
-                                    <div class="row">
-
-                                        <!-- <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item sm-m-top-20">
-                                                <img src="assets/images/About/math.jpg" alt="" />
-                                            </div>
-                                        </div> -->
-                                        <!-- <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item sm-m-top-20">
-                                                <img src="assets/images/About/eee.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item sm-m-top-20">
-                                                <img src="assets/images/About/mime2.jpg" alt="" />
-                                            </div> -->
-                                        <!-- </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/ncc3.jpg" alt="" />
-                                            </div> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/thiru11.jpg" alt="" />
-                                            </div>
-                                        </div> -->
-                                        <!-- <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/guitar1.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/amazon4.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/quantum3.jpg" alt="" />
-                                            </div>
-                                        </div> -->
-                                        <!-- <div class="col-md-4 col-sm-6">
-                                            <div class="ab_feature_item m-top-20">
-                                                <img src="assets/images/About/squash2.jpg" alt="" />
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section>
-
-            
-
-            <!--some quotes that I follow or a line should related me -->
-            <!-- <section id="simple" class="simple bg-grey roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_simple text-center">
-                            <div class="col-md-12">
-                                <h2>Simplicity isn’t simple</h2>
-                                <p>Eusus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere 
-                                    me lius quod ii legunt saepius. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse
-                                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan blandit
-                                    praesent luptatum.</p>
-
-                                <a href="" class="btn btn-default m-top-40">Contact Us <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-
-            <!--Education section-->
-
-            
-
-
-            <section id="teams" class="teams roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_teams">
-                            <div class="col-md-12">
-                                <div class="head_title text-left sm-text-center wow fadeInDown">
-                                    <h2>Qualification </h2>
-                                    <h5><em></em></h5>
-                                    <div class="separator_left"></div>
-                                </div>
-                            </div>
-
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="main_work">
-    
-                                <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
-                                    <div class="work_item">
-                                        <div class="row">
-                                            <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
-                                                <div class="work_item_img">
-                                                    <img src="assets/images/About/iit3.jpg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
-                                                <div class="work_item_details m-top-80 sm-m-top-20">
-                                                    <h4>Master of Technology in Quantum Technologies</h4>
-                                                    <!-- <div class="work_separator1"></div> -->
-                                                    <p class="m-top-40 sm-m-top-10">Indian Institite of Technology, Jodhpur
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-
-
-                                <div class="col-md-7 col-sm-12 col-xs-12">
-                                    <div class="work_item">
-                                        <div class="row">
-                                            <div class="col-md-7 col-sm-12 col-xs-12">
-                                                <div class="work_item_img sm-text-center sm-m-top-40">
-                                                    <img src="assets/images/About/cse.jpg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                                                <div class="work_item_details m-top-80 sm-m-top-20">
-                                                    <h4>GATE 2023</h4>
-                                                    <!-- <div class="work_separator2"></div> -->
-                                                    <p class="m-top-40 sm-m-top-10">Computer science and Engineering</p>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
-                                    <div class="work_item">
-                                        <div class="row">
-                                            <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
-                                                <div class="work_item_img sm-m-top-40">
-                                                    <img src="assets/images/About/kcg.jpeg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
-                                                <div class="work_item_details m-top-80 sm-m-top-20">
-                                                    <h4>Bachelor of Engineering in Electrical and Electronics Engineering</h4>
-                                                    <!-- <div class="work_separator1"></div> -->
-                                                    <p class="m-top-40 sm-m-top-10">KCG College of Technology, Chennai</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
     
 
-
-
-<!-- 
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/iitj.jpg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">Master of Technology in Quantum Technologies</h4>
-                                            <h5><em>Indian Institite of Technology, Jodhpur</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  -->
-
-
-
-
-                          <!-- <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/cse.jpg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">GATE 2023</h4>
-                                            <h5><em>Computer science and Engineering</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
- -->
-
-                            <!-- <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/kcg2.jpeg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">Bachelor of Engineering in Electrical and Electronics Engineering</h4>
-                                            <h5><em>KCG College of Technology, Chennai</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
- -->
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <!-- Experience section -->
-
-
-            <section id="teams" class="teams roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_teams">
-                            <div class="col-md-12">
-                                <div class="head_title text-left sm-text-center wow fadeInDown">
-                                    <h2>Work Experience </h2>
-                                    <h5><em></em></h5>
-                                    <div class="separator_left"></div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
-                                <div class="work_item">
-                                    <div class="row">
-                                        <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
-                                            <div class="work_item_img sm-m-top-40">
-                                                <img src="assets/images/About/amazon4.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
-                                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                                <h4>Automation Analyst</h4>
-                                                <!-- <div class="work_separator1"></div> -->
-                                                <p class="m-top-40 sm-m-top-10">Amazon, Chennai, 2021- 2023</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                    
-
-                            <div class="col-md-7 col-sm-12 col-xs-12">
-                                <div class="work_item">
-                                    <div class="row">
-                                        <div class="col-md-7 col-sm-12 col-xs-12">
-                                            <div class="work_item_img sm-text-center sm-m-top-40">
-                                                <img src="assets/images/About/amazon6.jpeg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                                <h4>Asscociate, Retail Process</h4>
-                                                <!-- <div class="work_separator2"></div> -->
-                                                <p class="m-top-40 sm-m-top-10">Amazon, Chennai, 2019- 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-
-
-                            <!-- <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/qworld.jpg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">Mentor</h4>
-                                            <h5><em>QWorld-Qinternship</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/amazon6.jpeg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">Automation Analyst</h4>
-                                            <h5><em>Amazon, Chennai, 2021- 2023</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="team_item m-top-30">
-                                    <div class="team_img">
-                                        <img src="assets/images/About/amazon4.jpg" alt="" />
-                                        <div class="team_caption">
-                                            <h4 class="">Asscociate, Retail Process</h4>
-                                            <h5><em>Amazon, Chennai, 2019- 2021</em></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  -->
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-<!-- Quantum Internships -->
-            
-
-            <section id="teams" class="teams roomy-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_teams">
-                            <div class="col-md-12">
-                                <div class="head_title text-left sm-text-center wow fadeInDown">
-                                    <h2>Quantum Internships</h2>
-                                    <h5><em></em></h5>
-                                    <div class="separator_left"></div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-                            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
-                                <div class="work_item">
-                                    <div class="row">
-                                        <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
-                                            <div class="work_item_img sm-m-top-40">
-                                                <img src="assets/images/About/qworld.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
-                                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                                <h4>Project Mentor</h4>
-                                                <!-- <div class="work_separator1"></div> -->
-                                                <p class="m-top-40 sm-m-top-10">QWorld-Qinternship, July 2024 - Aug 2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-md-7 col-sm-12 col-xs-12">
-                                <div class="work_item">
-                                    <div class="row">
-                                        <div class="col-md-7 col-sm-12 col-xs-12">
-                                            <div class="work_item_img sm-text-center sm-m-top-40">
-                                                <img src="assets/images/About/womanium.jpg" alt="Womanium" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                                <h4>Womanium Quantum+AI Program</h4>
-                                                <!-- <div class="work_separator2"></div> -->
-                                                <p class="m-top-40 sm-m-top-10">Womanium, July 2024 - Aug 2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
+    <section id="publications">
+    <h2>Publications</h2>
+      Quantum neural networks facilitating quantum state classification<a href="https://arxiv.org/abs/2504.06622" target="_blank"><i>arxiv</i></a><br>
+      From Static to Dynamic: Implementation of Long-Range Entanglement GHZ States for Dynamic
+Circuit-Based Quantum Teleportation <a href="https://ieeexplore.ieee.org/abstract/document/10677185" target="_blank"><i>link</i></a>
+   
+    </section>
   
-            <!-- scroll up-->
-            <div class="scrollup">
-                <a href="#"><i class="fa fa-chevron-up"></i></a>
-            </div><!-- End off scroll up -->
+    <section id="projects">
+      <h2>Projects & Research</h2>
+
+      <strong>Master Thesis Project</strong>- Classification of multi-qubit Quantum State using QML models <br><br>
+
+      <strong>Course Projects</strong> <br><br>
+      Custom ansatz for Variational Quantum Classifier |<a href="https://github.com/Thirumalai-97/QML-proj-iitj" target="_blank">Link</a> 
+      <br>Dynamic Circuit based Quantum Teleportation |<a href="https://github.com/Thirumalai-97/QRISE-IBM" target="_blank">Link</a>
+      <br> Quantum Convulutional Neuaral Network for mecical image classification |<a href="https://github.com/Thirumalai-97/FML-project-IITJ" target="_blank">Link</a>
+      <br>Implementation of Quantum Algorithms |<a href="https://github.com/Thirumalai-97/My_Documentation/tree/main/quantum_computing/IITJ_Lab" target="_blank">Link</a>
+       <br>Quantumm Inspired Optimization problems |<a href="https://github.com/Thirumalai-97/My_Documentation/tree/main/quantum_computing/IITJ_Lab/optimization_lab" target="_blank">Link</a>
+      <br><br>
+      <strong>Bachelor Thesis Project</strong>- Power Factor Improvement in KCG College - Case Study<br><br>
 
 
-            <footer id="footer" class="footer bg-mega">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_footer p-top-40 p-bottom-30">
-                            <div class="col-md-6 text-left sm-text-center">
-                                <p class="wow fadeInRight" data-wow-duration="1s">
-                                   
-                                    <i class="fa fa-heart"></i>
-                                
-                                    <a target="_blank" href=""></a> 
-                                    
-                                </p>
-                            </div>
-                            <div class="col-md-6 text-right sm-text-center sm-m-top-20">
-                                <ul class="list-inline">
-                                    <li><a href="https://www.linkedin.com/in/m-thirumalai/" target="_blank" class="fa fa-linkedin"></a></li>
-                                    <li><a href="https://github.com/Thirumalai-97" target="_blank" class="fa fa-github" ></a></li>
-                                    <li><a href="https://scholar.google.com/citations?user=L2RBc1cAAAAJ&hl=en&authuser=3" target="_blank" class="fa fa-graduation-cap"></a></li>
-                                    <li><a href="https://medium.com/@thirumalai11049761" target="_blank" class="fa fa-medium" ></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+    </section>
+
+    <section id="blogs">
+      <h2>Blogs</h2>
+      I write blogs on various topics in Quantum Computing verticals, please read my blogs at substack named<a href="https://mthiru.substack.com" target="_blank">iQuantum Notebook</a> and feel free add your sugesstions. 
+     
+    </section>
 
 
+     <section id="others">
+      <h2>Co-Curricular Activities</h2>
+      <strong>Leadership Skills</strong> <br><br>
+      Secretary of Quantum Club - IIT Jodpur (2024-2025) <br>
+      Qiskit Fall Fest 2024 Organizer -<a href="https://www.credly.com/badges/c7a66e5e-40d9-4c5a-a2c8-48a8988dfabe" target="_blank">Badge</a> <br>
+      Project Mentor at QWorld QInternship 2024 -<a href="https://github.com/Thirumalai-97/My-Certificate/blob/main/QWorld/QIntern2024-mentor-6.jpg" target="_blank">Certificate</a> <br>
+      Organized Quantum Algorithms workshop with Classiq <br>
+      Placement Co-ordinator at Placement Cell IIT Jodhpur <br>
+      Lead KCG College NCC troop as Company Quarter Master Sergeant (2018) <br> <br>
+
+      <strong>Rewards and Recognition</strong> <br><br>
+      Certifications from <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/IBM" target="_blank">Qiskit</a> | <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Pennylane" target="_blank">Pennylane</a> | 
+      <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/QWorld" target="_blank">QWorld</a> | <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Womanium" target="_blank">Womanium</a> | 
+      <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Classiq" target="_blank">Classiq</a> and others found<a href="https://github.com/Thirumalai-97/My-Certificate/tree/main" target="_blank">here</a> <br>
+      Breaking the Barrier Award at college day, 2018<a href="https://github.com/Thirumalai-97/My-Certificate/blob/main/UG/BTB.jpg" target="_blank">Certificate</a> <br>
+      GATE CSE 2023 Qualified <br>
+      Stellar award and Star of the Month during my tenure at Amazon 
 
 
+     
+    </section>
 
-        </div>
+    <!-- <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p><a href="your-cv.pdf" target="_blank">Download CV</a></p>
+    </section>
+  </main> -->
 
-        <!-- JS includes -->
-
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="assets/js/isotope.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/jquery.collapse.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
-
-
-        <!-- paradise slider js -->
-
-        <!--
-                <script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
-                <script src="assets/js/gmaps.min.js"></script>
-        
-                <script>
-                    function showmap() {
-                        var mapOptions = {
-                            zoom: 8,
-                            scrollwheel: false,
-                            center: new google.maps.LatLng(-34.397, 150.644),
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
-                        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-                        $('.mapheight').css('height', '350');
-                        $('.maps_text h3').hide();
-                    }
-        
-                </script>-->
-
-
-
-
-
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-
-    </body>
+  <footer>
+    <!-- <p>&copy; 2025 Your Name. All rights reserved.</p> -->
+  </footer>
+</body>
 </html>
