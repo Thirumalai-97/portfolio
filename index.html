@@ -37,7 +37,7 @@
 
   .cover-image {
     width: 100%;
-    height: 50%;        /* ✅ Maintains full proportions */
+    height: auto;        /* ✅ Maintains full proportions */
     display: block;
   }
 
@@ -150,7 +150,8 @@
 
   @media (max-width: 768px) {
   header {
-    height: 180px; /* Reduce image height */
+    height: 200px; /* Reduce image height */
+    object-fit: cover;
     padding: 1.5rem 1rem;
   }
 
