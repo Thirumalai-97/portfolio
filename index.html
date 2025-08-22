@@ -7,6 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
   <style>
+    html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
     body {
       font-family: 'Lora', serif;
       font-variant-numeric: tabular-nums;
@@ -22,6 +26,40 @@
       padding: 2rem 1rem;
       text-align: center;
     }
+    .header-with-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+  .cover-image {
+    width: 100%;
+    height: auto;        /* ✅ Maintains full proportions */
+    display: block;
+  }
+
+    .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+  }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
@@ -81,13 +119,34 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    @media (max-width: 768px) {
+    .header-text h1 {
+      font-size: 1.8rem;
+    }
+    .header-text p {
+      font-size: 1rem;
+    }
+  }
+
   </style>
 </head>
+
+
+
+
 <body>
-  <header>
-    <h1>Thirumalai M</h1>
-    <p>Quantum Machine Learning and AI</p>
-  </header>
+
+
+  <header class="header-with-img">
+  <img src="linkedinCover.png" alt="Cover Image" class="cover-image">
+  <div class="header-text">
+    <h1> </h1>
+    <p></p>
+  </div>
+</header>
+
+ 
 
   <nav>
     <a href="#about">About</a>
