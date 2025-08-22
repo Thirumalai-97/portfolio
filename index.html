@@ -31,12 +31,13 @@
     .header-with-img {
     position: relative;
     width: 100%;
+    height: 80%;
     overflow: hidden;
     }
 
   .cover-image {
     width: 100%;
-    height: auto;        /* ✅ Maintains full proportions */
+    height: 50%;        /* ✅ Maintains full proportions */
     display: block;
   }
 
@@ -75,19 +76,19 @@
 
     /* ----- Navigation ----- */
     nav {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      padding: 0.7rem;
-      position: sticky  ;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
-      box-sizing: border-box;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+    background: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
     nav a {
       color: #000;
@@ -161,12 +162,29 @@
     font-size: 0.9rem;
   }
 
-  nav {
+
+   nav {
+    position: fixed;  /* fixed instead of sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff; /* ensure nav has a background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+ main {
+    padding-top: 60px; /* add space so content doesn't go under nav */
+  }
+
+  /* nav {
     flex-wrap: wrap;
     gap: 0.8rem;
     padding: 0.5rem 1rem;
     position: relative; /* Avoid overlapping on small screens */
-  }
+  /* } */ */
 
   nav a {
     font-size: 0.95rem;
