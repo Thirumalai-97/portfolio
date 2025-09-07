@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXM0X6E4BQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SXM0X6E4BQ');
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiru Portfolio</title>
@@ -31,6 +42,7 @@
     .header-with-img {
     position: relative;
     width: 100%;
+    height: 80%;
     overflow: hidden;
     }
 
@@ -75,6 +87,7 @@
 
     /* ----- Navigation ----- */
     nav {
+<<<<<<< HEAD
       background: #fff;
       display: flex;
       justify-content: center;
@@ -88,6 +101,21 @@
       box-sizing: border-box;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+=======
+    background: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+>>>>>>> 03b3328e8adbef026804d1614104be3fb93e2ce9
 
     nav a {
       color: #000;
@@ -139,17 +167,18 @@
 
     /* ----- Footer ----- */
     footer {
-      background: #ffffff;
-      color: white;
+      background: #000000;
+      color: rgb(255, 255, 255);
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      margin-top: 2rem; 
     }
 
 
   @media (max-width: 768px) {
   header {
-    height: 180px; /* Reduce image height */
+    height: 200px; /* Reduce image height */
+    object-fit: cover;
     padding: 1.5rem 1rem;
   }
 
@@ -161,19 +190,41 @@
     font-size: 0.9rem;
   }
 
-  nav {
+
+   nav {
+    position: sticky;  /* fixed instead of sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff; /* ensure nav has a background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+ main {
+    padding-top: 60px; /* add space so content doesn't go under nav */
+  }
+
+  /* nav {
     flex-wrap: wrap;
     gap: 0.8rem;
     padding: 0.5rem 1rem;
     position: relative; /* Avoid overlapping on small screens */
-  }
+  /* } */ */
 
   nav a {
     font-size: 0.95rem;
   }
+  body {
+    padding-top: 50px;
+  }
 }
 
   </style>
+
+
 
 </head>
 
@@ -205,6 +256,12 @@
     <a href="#others">Others</a>
     <!-- <a href="#contact">Contact</a> -->
   </nav>
+
+  <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/er-mthirumalai', text: 'Connect with me', color: '#1d3557', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
 
   <main>
     <section id="about">
@@ -292,18 +349,28 @@ Circuit-Based Quantum Teleportation <a href="https://ieeexplore.ieee.org/abstrac
 
      
     </section>
-
-    <!-- <section id="contact">
+<!-- 
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
       <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
       <p><a href="your-cv.pdf" target="_blank">Download CV</a></p>
-    </section>
-  </main> -->
+    </section> -->
+  </main>
 
   <footer>
-    <!-- <p>&copy; 2025 Your Name. All rights reserved.</p> -->
+    <p>&copy; 2025 Thirumalai M. All rights reserved.</p>
+
+    <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=TV7VMTqTqyCUuf5TCeB9NnXP3b7chjyJWqT9xQOUgYA"></script> -->
+     <!-- above script for globe -->
+    
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=nxaZyCpyXJr4TeC7xGfCyD7ZY4xd2DQOPKRvDzcPkBQ&cl=ffffff&w=a"></script>
+    
+    
+
   </footer>
+
+  
 </body>
 </html>
