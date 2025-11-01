@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiru Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+    body {
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ----- Header ----- */
+    header {
+      background: #00050c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    .header-with-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+  .cover-image {
+    width: 100%;
+    height: auto;        /* ✅ Maintains full proportions */
+    display: block;
+  }
+
+    .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+  }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #a8dadc;
+    }
+
+    /* ----- Navigation ----- */
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #1d3557;
+      transform: scale(1.05);
+    }
+
+    /* ----- Main Layout ----- */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #1d3557;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #0b5bca;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+      background: #ffffff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+    .header-text h1 {
+      font-size: 1.8rem;
+    }
+    .header-text p {
+      font-size: 1rem;
+    }
+  }
+
+  </style>
+
+</head>
+
+
+
+
+<body>
+
+
+  <header class="header-with-img">
+  <img src="linkedinCover.png" alt="Cover Image" class="cover-image">
+
+  <!-- <div class="header-text">
+    <h1></h1>
+    <p></p> -->
+
+  </div>
+</header>
+
+ 
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#others">Others</a>
+    <!-- <a href="#contact">Contact</a> -->
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me 🙋🏻‍♂️</h2>
+      <p>
+    I am a researcher with a strong interest in <strong>Quantum Computing, Artificial Intelligence, and Optimization</strong>. 
+    My research focus on <strong> quantum machine learning, quantum-inspired algorithms, machine learning models, neuro computing and computational problem-solving</strong>, with hands-on experience in applying these techniques to complex challenges. 
+   
+     <p>Email: <a href="mailto:your.email@example.com">er.mthirumalai@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/m-thirumalai/" target="_blank"> LinkedIn </a>|
+      <a href="https://scholar.google.com/citations?user=L2RBc1cAAAAJ&hl=en&authuser=3" target="_blank"> Google Scholar</a> |
+      <a href="https://github.com/Thirumalai-97" target="_blank"> GitHub</a> |
+      <a href="https://drive.google.com/file/d/14l2QbJk3RiBYE6GQ4E_0hFQmBMjNL_4e/view?usp=sharing" target="_blank"> Download CV</a>
+    
+    </p>
+
+    </section>
+
+
+     <section id="experience">
+      <h2>Experience 💼 </h2>
+     • Knowledge Asscociate at <strong>Centre for Development of Advanced Computing (C-DAC)</strong>, New Delhi (2025 - Present) <br>
+     • Automation Analyst at <strong>Amazon</strong>, Chennai (2019 - 2023)
+    </section>
+
+
+     <section id="education">
+      <h2>Education 🎓 </h2>
+      • Master of Technology (MTech) in <strong>Quantum Technologies at Indian Institite of Technology</strong>, Jodhpur, India (2025) <br>
+      • Bachelor of Engineering (BE) in <strong>Electrical and Electronics Engineering</strong> at KCG College of Technology, Chennai (2018)
+    </section>
+
+    
+
+    <section id="publications">
+    <h2>Publications 📃</h2>
+     • Quantum neural networks facilitating quantum state classification<a href="https://arxiv.org/abs/2504.06622" target="_blank"><i> arxiv</i></a><br>
+     • From Static to Dynamic: Implementation of Long-Range Entanglement GHZ States for Dynamic
+Circuit-Based Quantum Teleportation <a href="https://ieeexplore.ieee.org/abstract/document/10677185" target="_blank"><i>link</i></a>
+   
+    </section>
+  
+    <section id="projects">
+      <h2>Projects & Research ⚛️</h2>
+
+      <strong>Master Thesis Project</strong>- Classification of multi-qubit Quantum State using QML models <br><br>
+
+      <strong>Course Projects</strong> <br><br>
+      • Custom ansatz for Variational Quantum Classifier | <a href="https://github.com/Thirumalai-97/QML-proj-iitj" target="_blank">Link</a> 
+      <br>• Dynamic Circuit based Quantum Teleportation | <a href="https://github.com/Thirumalai-97/QRISE-IBM" target="_blank">Link</a>
+      <br>• Quantum Convulutional Neuaral Network for mecical image classification | <a href="https://github.com/Thirumalai-97/FML-project-IITJ" target="_blank">Link</a>
+      <br>• Implementation of Quantum Algorithms | <a href="https://github.com/Thirumalai-97/My_Documentation/tree/main/quantum_computing/IITJ_Lab" target="_blank">Link</a>
+       <br>• Quantumm Inspired Optimization problems | <a href="https://github.com/Thirumalai-97/My_Documentation/tree/main/quantum_computing/IITJ_Lab/optimization_lab" target="_blank">Link</a>
+      <br><br>
+      <strong>Bachelor Thesis Project</strong>- Power Factor Improvement in KCG College - Case Study<br><br>
+
+
+    </section>
+
+    <section id="blogs">
+      <h2>Blogs 📝</h2>
+      I write blogs on various topics in Quantum Computing verticals, please read my blogs at substack named <a href="https://mthiru.substack.com" target="_blank">iQuantum Notebook</a> and feel free add your sugesstions. 
+     
+    </section>
+
+
+     <section id="others">
+      <h2>Co-Curricular Activities 📊</h2>
+      <strong>Leadership Skills</strong> <br><br>
+      • Secretary of Quantum Club - IIT Jodpur (2024-2025) <br>
+      • Qiskit Fall Fest 2024 Organizer - <a href="https://www.credly.com/badges/c7a66e5e-40d9-4c5a-a2c8-48a8988dfabe" target="_blank">Badge</a> <br>
+      • Project Mentor at QWorld QInternship 2024 - <a href="https://github.com/Thirumalai-97/My-Certificate/blob/main/QWorld/QIntern2024-mentor-6.jpg" target="_blank">Certificate</a> <br>
+      • Organized Quantum Algorithms workshop with Classiq <br>
+      • Placement Co-ordinator at Placement Cell IIT Jodhpur <br>
+      • Lead KCG College NCC troop as Company Quarter Master Sergeant (2018) <br> <br>
+ 
+      <strong>Rewards and Recognition</strong> <br><br>
+      • Certifications from <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/IBM" target="_blank">Qiskit</a> | <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Pennylane" target="_blank">Pennylane</a> | 
+      <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/QWorld" target="_blank">QWorld</a> | <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Womanium" target="_blank">Womanium</a> | 
+      <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main/Classiq" target="_blank">Classiq</a> and others found <a href="https://github.com/Thirumalai-97/My-Certificate/tree/main" target="_blank">here</a> <br>
+      • Breaking the Barrier Award at college day, 2018 <a href="https://github.com/Thirumalai-97/My-Certificate/blob/main/UG/BTB.jpg" target="_blank">Certificate</a> <br>
+      • GATE CSE 2023 Qualified <br>
+      • Stellar award and Star of the Month during my tenure at Amazon 
+
+
+     
+    </section>
+
+    <!-- <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p><a href="your-cv.pdf" target="_blank">Download CV</a></p>
+    </section>
+  </main> -->
+
+  <footer>
+    <!-- <p>&copy; 2025 Your Name. All rights reserved.</p> -->
+  </footer>
+</body>
+</html>
